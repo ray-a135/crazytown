@@ -15,7 +15,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, lo
     mySprite.setPosition(78, 52)
 })
 info.onCountdownEnd(function () {
-    game.splash("")
+    game.splash("Party Started!")
     tiles.setCurrentTilemap(tilemap`level28`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, location) {
