@@ -14,6 +14,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, lo
     tiles.setCurrentTilemap(tilemap`level12`)
     mySprite.setPosition(78, 52)
 })
+info.onCountdownEnd(function () {
+    game.splash("")
+    tiles.setCurrentTilemap(tilemap`level28`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level13`)
 })
@@ -37,6 +41,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile27`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level13`)
 })
 let mySprite: Sprite = null
+info.startCountdown(60)
 mySprite = sprites.create(img`
     f 2 2 2 2 2 2 f f f f 2 2 2 2 2 
     f 2 2 2 2 2 2 f f f f 2 2 2 2 2 
